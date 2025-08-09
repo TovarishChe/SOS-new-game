@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SURVIVE AT ALL COSTS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__top">
+            <a href="#" class="logo">
+              <img src="images/logo.svg" alt="" class="logo-img">
+            </a>
+            <ul class="header__top-items">
+              <li class="header__top-item">
+                <a href="#" class="header__top-link">main</a>
+              </li>
+              <li class="header__top-item">
+                <a href="#" class="header__top-link">about</a>
+              </li>
+              <li class="header__top-item">
+                <a href="#" class="header__top-link">game features</a>
+              </li>
+              <li class="header__top-item">
+                <a href="#" class="header__top-link">system requirements</a>
+              </li>
+              <li class="header__top-item">
+                <a href="#" class="header__top-link">quotes</a>
+              </li>
+            </ul>
+            <div class="header__top-end">
+              <div class="lang">
+                <button class="lang-btn"></button>
+                <ul class="lang__list">
+                  <output></output>
+                  <li class="lang-item">eng</li>
+                  <li class="lang-item">rus</li>
+                  <li class="lang-item">deu</li>
+                  <li class="lang-item">fra</li>
+                </ul>
+              </div>
+              <a href="#" class="header__top-gamelink">
+                <img src="images/xbox-icon.svg" alt="" class="game-img">
+              </a>
+              <a href="#" class="header__top-gamelink">
+                <img src="images/steam-icon.svg" alt="" class="game-img">
+              </a>
+            </div>
+          </div>
+        <div class="header__title">
+          <h1 class="header__title-text">
+            SURVIVE AT ALL COSTS
+          </h1>
+          <h3 class="header-text">
+            Experience new social battle royale game
+          </h3>
+          <button class="buynow-btn">
+            <p class="buynow-text">
+              Buy Now on Steam | $14.99
+            </p>
+          </button>
+        </div>
+        <a href="#" class="next-page">The story<img src="images/scroll-down.svg" alt="" class="story-img"></a>
+      </div>
+      </div>
+    </header>
+    <section class="slider">
+      <div class="slide" style="background-image: url(images/bgimage-1.webp);"></div>
+      <div class="slide" style="background-image: url(images/bgimage-2.webp);"></div>
+      <div class="slide" style="background-image: url(images/bgimage-3.webp);"></div>
+      <div class="slide" style="background-image: url(images/bgimage-4.webp);"></div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="about__wrapper">
+          <div class="about__text">
+            <h3 class="about__preview">
+              What is SOS?
+            </h3>
+            <h2 class="about__title">
+              social battle royale game
+            </h2>
+            <p class="preview-text">
+              Each round, you and 15 other contestants compete to
+escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
+solo or form friendships with others to escape? 
+            </p>
+            <p class="preview-text">
+              Making the right decisions could be the
+difference between life and death.
+            </p>
+          </div>
+          <div class="about__slider">
+            <button class="slider-btn slider-btn--prev" onclick="prevSlide()"><</button>
+            <div class="slider-track" id="sliderTrack">
+              <div class="about-slide slide-1 active" style="background-image: url(images/about_slide1.webp);"></div>
+              <div class="about-slide slide-2" style="background-image: url(images/about_slide2.webp);"></div>
+              <div class="about-slide slide-3" style="background-image: url(images/about_slide3.webp);"></div>
+            </div>
+            <button class="slider-btn slider-btn--next" onclick="nextSlide()">></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fiatures">
+      <div class="container">
+        <div class="fiatures__wrapper">
+          <h3 class="fiatures-preview">What’s so special?</h3>
+          <h2 class="fiatures-title">features</h2>
+          <div class="features-container">
+            <div class="indicator-container" id="indicatorContainer">
+            </div>
+            <h4 class="fiatures-tag">SURVIVE AT ALL COSTS</h4>
+            <p class="fiatures-text block" style="display: block; opacity: 1;">You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue chopper.</p>
+            <h4 class="fiatures-tag">CREATE ALLIES AND ENEMIES</h4>
+            <p class="fiatures-text" style="display: none;">You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue chopper.</p>
+            <h4 class="fiatures-tag">IMPRESS THE AUDIENCE</h4>
+            <p class="fiatures-text" style="display: none;">You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue chopper.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="system">
+      <div class="container">
+        <div class="system-wrapper">
+          <div class="system__title-wrapper">
+            <h3 class="system-preview">Can My Computer Run this game?</h3>
+            <h2 class="system-title">system requirements</h2>
+          </div>
+          <div class="system-block">
+            <div class="system-block_requirements1">
+              <h3 class="requirements-title">OS:</h3>
+              <p class="requirements-text">Windows 7 64-bit only</p>
+              <p class="requirements-text">(No OSX support at this time)</p>
+            </div>
+            <div class="system-block_requirements2">
+              <h3 class="requirements-title">pROCESSOR:</h3>
+              <p class="requirements-text">Intel Core 2 Duo @ 2.4 GHZ or</p>
+              <p class="requirements-text">AMD Athlon X2 @ 2.8 GHZ</p>
+            </div>
+            <div class="system-block_requirements3">
+              <h3 class="requirements-title">mEMORY:</h3>
+              <p class="requirements-text">8 GB RAM</p>
+            </div>
+            <div class="system-block_requirements4">
+              <h3 class="requirements-title">storage:</h3>
+              <p class="requirements-text">8 GB available space</p>
+            </div>
+            <div class="system-block_requirements5">
+              <h3 class="requirements-title">GRAPHICS:</h3>
+              <p class="requirements-text">NVIDIA GeForce GTX 660 2GB or</p>
+              <p class="requirements-text">AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script> 
+  <script src="js/main.js"></script>
+</body>
+</html>
