@@ -30,8 +30,8 @@ h2 {
     font-size: 80px;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: normal;
-    letter-spacing: .5rem;
+    line-height: 100%;
+    letter-spacing: 3px;
 }
 
 h3 {
@@ -39,8 +39,8 @@ h3 {
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: normal;
-    letter-spacing: .2rem;
+    line-height: 100%;
+    letter-spacing: 2px;
 }
 
 h4 {
@@ -49,7 +49,7 @@ h4 {
     font-weight: 700;
     text-transform: uppercase;
     line-height: normal;
-    letter-spacing: .2rem;
+    letter-spacing: 2px;
     color: #FFB548;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -59,7 +59,8 @@ p {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.38;
+    line-height: 22px;
+    letter-spacing: 0px;
 }
 
 button {
@@ -209,8 +210,8 @@ li {
 
 .about {
     background:
-    radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%),
-    url(../images/bgimage-2.webp);
+        radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%),
+        url(../images/bgimage-2.webp);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -330,7 +331,7 @@ li {
 
 .fiatures {
     background: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%),
-    url(../images/bgimage-3.webp);
+        url(../images/bgimage-3.webp);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -409,7 +410,7 @@ li {
     z-index: 1;
 }
 
-.fiatures-text{
+.fiatures-text {
     opacity: 0;
     transition: opacity 0.4s ease;
 }
@@ -420,7 +421,7 @@ li {
 
 .system {
     background: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%),
-    url(../images/bgimage-4.webp);
+        url(../images/bgimage-4.webp);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -490,7 +491,7 @@ li {
 
 .quotes {
     background: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%),
-    url(../images/bgimage-5.webp);
+        url(../images/bgimage-5.webp);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -565,7 +566,7 @@ li {
     margin-left: 22px;
     margin-top: 26px;
     color: #FFB548;
-;
+    ;
 }
 
 .comentator-prof {
@@ -588,4 +589,91 @@ li {
     margin: 10px auto 21px 17px;
     font-size: 14px;
     opacity: 0.5;
+}
+
+.newsletter {
+    height: 100vh;
+    background-color: #080A0B;
+    ;
+}
+
+.newsletter-wrapper {
+    display: flex;
+}
+
+.newsletter__image {
+    background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%),
+        url(../images/footer-image.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.newsletter-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    height: 695px;
+    gap: 70px;
+}
+
+.newsletter__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newsletter__description {
+    margin: 46px 0;
+    max-width: 645px;
+}
+
+.newsletter__form {
+    position: relative;
+}
+
+.newsletter__inp {
+    width: 367px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    border-radius: 5px;
+    color: #FFB548;
+    font-size: 18px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.newsletter__label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    opacity: 0.5;
+    font-size: 18px;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: transparent;
+    padding: 0 4px;
+}
+
+.newsletter__inp:focus + .newsletter__label,
+.newsletter__inp:not(:placeholder-shown) + .newsletter__label {
+    transform: translateY(-25px);
+    font-size: 14px;
+}
+
+.newsletter__inp:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.newsletter__btn {
+    width: 260px;
+    height: 60px;
+    background-color: #F3AF34;
+    border: none;
+    border-radius: 4px;
+    margin-left: 17px;
 }
