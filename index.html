@@ -17,28 +17,28 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header" id="main">
       <div class="container">
         <div class="header__wrapper">
           <div class="header__top">
-            <a href="#" class="logo">
-              <img src="images/logo.svg" alt="" class="logo-img">
+            <a href="#" class="header__logo">
+              <img src="images/logo.svg" alt="" class="header__logo-img">
             </a>
             <ul class="header__top-items">
               <li class="header__top-item">
-                <a href="#" class="header__top-link">main</a>
+                <a href="#main" class="header__top-link">main</a>
               </li>
               <li class="header__top-item">
-                <a href="#" class="header__top-link">about</a>
+                <a href="#about" class="header__top-link">about</a>
               </li>
               <li class="header__top-item">
-                <a href="#" class="header__top-link">game features</a>
+                <a href="#features" class="header__top-link">game features</a>
               </li>
               <li class="header__top-item">
-                <a href="#" class="header__top-link">system requirements</a>
+                <a href="#system" class="header__top-link">system requirements</a>
               </li>
               <li class="header__top-item">
-                <a href="#" class="header__top-link">quotes</a>
+                <a href="#quotes" class="header__top-link">quotes</a>
               </li>
             </ul>
             <div class="header__top-end">
@@ -83,7 +83,7 @@
       <div class="slide" style="background-image: url(images/bgimage-3.webp);"></div>
       <div class="slide" style="background-image: url(images/bgimage-4.webp);"></div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about__wrapper">
           <div class="about__text">
@@ -104,18 +104,18 @@ difference between life and death.
             </p>
           </div>
           <div class="about__slider">
-            <button class="slider-btn slider-btn--prev" onclick="prevSlide()"><</button>
+            <button class="slider-btn slider-btn--prev" onclick="prevSlide()"><img src="images/switch.svg" alt="" class="slider-btn__img1"></button>
             <div class="slider-track" id="sliderTrack">
               <div class="about-slide slide-1 active" style="background-image: url(images/about_slide1.webp);"></div>
               <div class="about-slide slide-2" style="background-image: url(images/about_slide2.webp);"></div>
               <div class="about-slide slide-3" style="background-image: url(images/about_slide3.webp);"></div>
             </div>
-            <button class="slider-btn slider-btn--next" onclick="nextSlide()">></button>
+            <button class="slider-btn slider-btn--next" onclick="nextSlide()"><img src="images/switch.svg" alt="" class="slider-btn__img2"></button>
           </div>
         </div>
       </div>
     </section>
-    <section class="fiatures">
+    <section class="fiatures" id="features">
       <div class="container">
         <div class="fiatures__wrapper">
           <h3 class="fiatures-preview">What’s so special?</h3>
@@ -133,7 +133,7 @@ difference between life and death.
         </div>
       </div>
     </section>
-    <section class="system">
+    <section class="system" id="system">
       <div class="container">
         <div class="system-wrapper">
           <div class="system__title-wrapper">
@@ -168,7 +168,7 @@ difference between life and death.
         </div>
       </div>
     </section>
-    <section class="quotes">
+    <section class="quotes" id="quotes">
       <div class="container">
         <div class="quotes__wrapper">
         <div class="quotes__text">
@@ -231,11 +231,57 @@ difference between life and death.
             <div class="newsletter__form">
               <input type="email" class="newsletter__inp" id="newsletterEmail" placeholder=" " required>
               <label for="newsletterEmail" class="newsletter__label">Your email address</label>
-              <button class="newsletter__btn">Subscribe now</button>
+              <button class="newsletter__btn">
+                <p class="newsletter__btn-text">Subscribe now</p>
+              </button>
             </div>
           </div>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+          <div class="footer__top">
+            <a href="#" class="footer-logo">
+              <img src="images/logo.svg" alt="" class="footer__logo-img">
+            </a>
+            <ul class="footer__top-items">
+              <li class="footer__top-item">
+                <a href="#main" class="footer__top-link">main</a>
+              </li>
+              <li class="footer__top-item">
+                <a href="#about" class="footer__top-link">about</a>
+              </li>
+              <li class="footer__top-item">
+                <a href="#features" class="footer__top-link">game features</a>
+              </li>
+              <li class="footer__top-item">
+                <a href="#system" class="footer__top-link">system requirements</a>
+              </li>
+              <li class="footer__top-item">
+                <a href="#quotes" class="footer__top-link">quotes</a>
+              </li>
+            </ul>
+            <div class="footer__top-end">
+              <a href="#" class="footer__top-gamelink">
+                <img src="images/facebook.svg" alt="" class="game-img">
+              </a>
+              <a href="#" class="footer__top-gamelink">
+                <img src="images/twitter2.svg" alt="" class="game-img">
+              </a>
+              <a href="#" class="footer__top-gamelink">
+                <img src="images/twitch.svg" alt="" class="game-img">
+              </a>
+              <a href="#" class="footer__top-gamelink">
+                <img src="images/youtube.svg" alt="" class="game-img">
+              </a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p class="footer__bottom-text">© 2023 SOS Game. All rights reserved.</p>
+            <div class="footer__bottom-links">
+              <a href="#" class="footer__bottom-link">Privacy Policy</a>
+              <a href="#" class="footer__bottom-link">Terms of Service</a>
+              <a href="#" class="footer__bottom-link">Code of Conduct</a>
+            </div>
+        </div>
       </div>
     </section>
   </div>
