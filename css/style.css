@@ -28,7 +28,7 @@ a {
 h1,
 h2 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 80px;
+    font-size: clamp(24px, 8vw, 80px);
     font-weight: 700;
     text-transform: uppercase;
     line-height: 100%;
@@ -37,7 +37,7 @@ h2 {
 
 h3 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 24px;
+    font-size: clamp(8px, 4vw, 24px);
     font-weight: 700;
     text-transform: uppercase;
     line-height: 100%;
@@ -46,7 +46,7 @@ h3 {
 
 h4 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 36px;
+    font-size: clamp(14px, 4vw, 36px);
     font-weight: 700;
     text-transform: uppercase;
     line-height: normal;
@@ -58,7 +58,7 @@ h4 {
 
 p {
     font-family: "Open Sans", sans-serif;
-    font-size: 18px;
+    font-size: clamp(8px, 4vw, 18px);
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0px;
@@ -85,7 +85,7 @@ li {
 }
 
 .container {
-    width: 1220px;
+    max-width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -357,7 +357,6 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
 }
 
 .fiatures__wrapper {
@@ -517,7 +516,6 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
 }
 
 .quotes__wrapper {
@@ -749,4 +747,66 @@ li {
     content: "|";
     margin: 0 5px;
     color: #fff;
+}
+
+.menu__btn{
+    display: none;
+    width: 42px;
+    height: 28px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    position: fixed;
+    z-index: 2;
+}
+.menu__btn span{
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition: background-color .7s;
+    border-radius: 3px;
+}
+.menu.menu__open .header__top-items {
+    transform: translateY(0%);
+}
+.menu.menu__open .menu__btn span{
+    background-color: #F3AF34;
+}
+
+@media (max-width: 780px) {
+    .menu__btn{
+        display: flex;
+        right: 20px;
+        top: 35px;
+    }
+    .header__top-items{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #151515;
+        color: #fff;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 24px;
+        transform: translateY(-100%);
+        transition: transform .3s;
+        z-index: 1;
+        margin: 0;
+    }
+    .header__top-end {
+        margin-right: 70px;
+    }
+    .header__top-gamelink {
+        display: none;
+    }
+    .header__top-item+.header__top-item {
+    margin-left: 0;
+    }
 }
