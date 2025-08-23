@@ -321,11 +321,12 @@ li {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    z-index: 20;
+    z-index: 2;
     background-color: transparent;
     width: 0;
     height: 0;
     border-radius: 15px;
+    padding: 0;
 }
 
 .slider-btn__img1 {
@@ -764,7 +765,7 @@ li {
     background-color: transparent;
     padding: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
 }
 .menu__btn span{
     width: 100%;
@@ -843,6 +844,10 @@ li {
         display: flex;
         right: 20px;
         top: 35px;
+    }
+    .no-scroll {
+    overflow: hidden;
+    height: 100vh;
     }
     .header__top-items{
         position: fixed;

@@ -27,8 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector('.menu');
 
   menuBtn.addEventListener('click', ()=>{
-  menu.classList.toggle('menu__open')
-  })
+  menu.classList.toggle('menu__open');
+  document.body.classList.toggle('no-scroll');
+  });
 
   $('.slider').slick({
     arrows: false,
